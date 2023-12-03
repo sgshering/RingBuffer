@@ -65,8 +65,10 @@ import java.util.Collection;
  * {@link #clear()} discards the underlying array to avoid memory leaks. 
  * {@link #removeAll()} calls {@link #clear()}. 
  * <p>
- * Elements can be {@code null}, but this can make interpretation of return values of some methods awkward.
- * Consider using {@link #size()} to disambiguate.
+ * Elements can be {@code null}, but this means that,
+ * if {@link #peek()}, {@link #poll()} or {@link #remove()} return null,
+ * this could be because an element was {@code null} or because the buffer was empty.
+ * Consider using {@link #isEmpty()} or {@link #size()} to disambiguate.
  * 
  * @param <E> the type of elements in the buffer
  * @author Steve Shering
