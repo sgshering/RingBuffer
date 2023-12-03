@@ -4,7 +4,7 @@ Simple, fast ring buffer (circular buffer) implementations for Java.
 
 A ring buffer is a fixed-size first in - first out buffer typically backed by an array with head and tail pointers. Elements are added to the tail of the buffer and removed from the head. When the end of the array is reached, the pointers wrap around to the beginning. When the buffer is full, adding new elements overwrites the oldest elements (but see the **offer(E)** and **offer(E[])** methods in these implementations).
 
-The javadocs are [here]([https://www.sherst.net/javadoc/net/sherst/util/package-summary.html)
+The javadocs are [here](https://www.sherst.net/javadoc/net/sherst/util/package-summary.html)
 
 Pros: Fast, simple.
 
