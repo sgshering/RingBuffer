@@ -65,7 +65,7 @@ import java.util.Objects;
  * {@link #removeAll()} calls {@link #clear()}. 
  * <p>
  * Elements can be {@code null}, but this can make interpretation of return values of some methods awkward.
- * Consider using {@link #size()} to disambiguate.
+ * Consider using {@link #isEmpty()} or {@link #size()} to disambiguate.
  * <p>
  * {@link #poll()} might seem redundant, but is overridden in {@link BlockingRingBuffer}.
  * 
