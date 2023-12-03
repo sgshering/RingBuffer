@@ -66,7 +66,7 @@ import java.util.Collection;
  * {@link #removeAll()} calls {@link #clear()}. 
  * <p>
  * Elements can be {@code null}, but this can make interpretation of return values of some methods awkward.
- * Consider using {@link #size()} to disambiguate.
+ * Consider using {@link #isEmpty()} or {@link #size()} to disambiguate.
  * 
  * @param <E> the type of elements in the buffer
  * @author Steve Shering
